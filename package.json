@@ -7,9 +7,17 @@
     "esgenerate": "./bin/esgenerate.js",
     "escodegen": "./bin/escodegen.js"
   },
-  "version": "0.1.0-1.4.2dev",
+  "files": [
+    "LICENSE.BSD",
+    "LICENSE.source-map",
+    "README.md",
+    "bin",
+    "escodegen.js",
+    "package.json"
+  ],
+  "version": "1.8.0",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=0.12.0"
   },
   "authors": [
     {
@@ -23,25 +31,25 @@
     "url": "http://github.com/ng-vu/escodegen-jsx.git"
   },
   "dependencies": {
-    "esprima": "^1.2.2",
-    "esprima-fb": "^8001.1001.0-dev-harmony-fb",
-    "estraverse": "^1.8.0",
-    "esutils": "^1.1.6",
-    "optionator": "^0.4.0"
+    "acorn-jsx": "^2.0.1",
+    "acorn": "^3.0.4",
+    "esprima": "^2.7.1",
+    "estraverse": "^4.1.1",
+    "esutils": "^2.0.2",
+    "optionator": "^0.8.1"
   },
   "optionalDependencies": {
-    "source-map": "~0.1.40"
+    "source-map": "~0.5.3"
   },
   "devDependencies": {
-    "esprima-moz": "*",
-    "semver": "^4.1.0",
-    "bluebird": "^2.3.11",
-    "chai": "^1.10.0",
-    "gulp-mocha": "^2.0.0",
-    "gulp-eslint": "^0.2.0",
+    "bluebird": "^3.3.3",
+    "bower-registry-client": "^1.0.0",
+    "chai": "^3.5.0",
+    "commonjs-everywhere": "^0.9.7",
     "gulp": "^3.8.10",
-    "bower-registry-client": "^0.2.1",
-    "commonjs-everywhere": "^0.9.7"
+    "gulp-eslint": "^2.0.0",
+    "gulp-mocha": "^2.0.0",
+    "semver": "^5.1.0"
   },
   "licenses": [
     {

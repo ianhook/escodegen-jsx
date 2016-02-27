@@ -1,7 +1,7 @@
 'use strict';
 
 var fs = require('fs'),
-    esprimafb = require('esprima-fb'),
+    acorn = require('acorn-jsx'),
     escodegen = require('./loader'),
     chai = require('chai'),
     expect = chai.expect;
@@ -13,13 +13,14 @@ function test(code, expected) {
     StringObject = String;
 
     options = {
+        plugins: { jsx: true },
         range: true,
         loc: false,
         tokens: true,
         raw: false
     };
 
-    tree = esprimafb.parse(code, options);
+    tree = acorn.parse(code, options);
 
     // for UNIX text comment
     actual = escodegen.generate(tree).replace(/[\n\r]$/, '') + '\n';

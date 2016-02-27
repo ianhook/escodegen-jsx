@@ -42,6 +42,7 @@ var ESLINT_OPTION = {
         'quotes': 0,
         'eqeqeq': 0,
         'no-use-before-define': 0,
+        'dot-notation': 0,
         'no-shadow': 0,
         'no-unused-vars': [
             2,
@@ -50,7 +51,7 @@ var ESLINT_OPTION = {
                 'args': 'none'
             }
         ],
-        'no-multi-spaces': false,
+        'no-multi-spaces': 2,
         'new-cap': [
             2,
             {
