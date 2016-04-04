@@ -1,8 +1,7 @@
 ## Escodegen with JSX
-[![npm version](https://badge.fury.io/js/escodegen-jsx.svg)](http://badge.fury.io/js/escodegen-jsx)
-[![Build Status](https://secure.travis-ci.org/ng-vu/escodegen-jsx.svg)](http://travis-ci.org/ng-vu/escodegen-jsx)
-[![Dependency Status](https://david-dm.org/ng-vu/escodegen-jsx.svg)](https://david-dm.org/ng-vu/escodegen-jsx)
-[![devDependency Status](https://david-dm.org/ng-vu/escodegen-jsx/dev-status.svg)](https://david-dm.org/ng-vu/escodegen-jsx#info=devDependencies)
+[![Build Status](https://secure.travis-ci.org/ianhook/escodegen-jsx.svg)](http://travis-ci.org/ianhook/escodegen-jsx)
+[![Dependency Status](https://david-dm.org/ianhook/escodegen-jsx.svg)](https://david-dm.org/ianhook/escodegen-jsx)
+[![devDependency Status](https://david-dm.org/ianhook/escodegen-jsx/dev-status.svg)](https://david-dm.org/ianhook/escodegen-jsx#info=devDependencies)
 
 Escodegen ([escodegen](http://github.com/estools/escodegen)) is an
 [ECMAScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
