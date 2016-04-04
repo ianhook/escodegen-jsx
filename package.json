@@ -31,7 +31,7 @@
     "url": "http://github.com/ng-vu/escodegen-jsx.git"
   },
   "dependencies": {
-    "acorn-jsx": "^2.0.1",
+    "acorn-jsx": "^3.0.0",
     "acorn": "^3.0.4",
     "esprima": "^2.7.1",
     "estraverse": "^4.1.1",
