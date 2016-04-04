@@ -63,7 +63,8 @@
         sourceCode,
         preserveBlankLines,
         FORMAT_MINIFY,
-        FORMAT_DEFAULTS;
+        FORMAT_DEFAULTS,
+        VisitorKeys;
 
     estraverse = require('estraverse');
     esutils = require('esutils');
@@ -79,7 +80,7 @@
         JSXOpeningElement: 'JSXOpeningElement'
     });
 
-    Syntax = Object.assign(estraverse.VisitorKeys, {
+    VisitorKeys = Object.assign(estraverse.VisitorKeys, {
         JSXAttribute: ['name', 'value'],
         JSXClosingElement: ['name'],
         JSXElement: ['openingElement', 'closingElement', 'children'],
