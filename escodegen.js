@@ -79,6 +79,17 @@
         JSXOpeningElement: 'JSXOpeningElement'
     });
 
+    Syntax = Object.assign(estraverse.VisitorKeys, {
+        JSXAttribute: ['name', 'value'],
+        JSXClosingElement: ['name'],
+        JSXElement: ['openingElement', 'closingElement', 'children'],
+        JSXExpressionContainer: ['expression'],
+        JSXIdentifier: [],
+        JSXMemberExpression: ['object', 'property'],
+        JSXNamespacedName: ['namespace', 'name'],
+        JSXOpeningElement: ['attributes', 'name', ]
+    });
+
     // Generation is done by generateExpression.
     function isExpression(node) {
         return CodeGenerator.Expression.hasOwnProperty(node.type);
@@ -744,6 +755,9 @@
         if (stmt.trailingComments) {
 
             if (preserveBlankLines) {
+                if (!Array.isArray(result)) {
+                    result = [ result ];
+                }
                 comment = stmt.trailingComments[0];
                 extRange = comment.extendedRange;
                 range = comment.range;
