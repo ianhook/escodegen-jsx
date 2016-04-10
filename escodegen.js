@@ -771,6 +771,7 @@
                 } else {
                     result.push(prefix);
                     result.push(generateComment(comment));
+                    result.push('\n');
                 }
             } else {
                 tailingToStatement = !endsWithLineTerminator(toSourceNodeWhenNeeded(result).toString());
